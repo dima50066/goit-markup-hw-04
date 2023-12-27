@@ -109,6 +109,8 @@ img {
 .section-main {
   background: #2e2f42;
   padding: 188px 0;
+  background: url(/images/people-office.jpg);
+  background-size: 1440px;
 }
 
 .section-main-title {
@@ -172,6 +174,11 @@ img {
   color: #434455;
 }
 
+.adv-icon {
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+}
 /* team */
 .section-team {
   background: #f4f4fd;
@@ -219,6 +226,8 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+}
+.trall-icons-ul {
 }
 
 /* portfolio */
