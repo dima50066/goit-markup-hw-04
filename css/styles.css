@@ -137,6 +137,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-main-title {
@@ -176,8 +178,6 @@ img {
 }
 
 /* advantages */
-.section-adv {
-}
 
 .section-adv-ul {
   display: flex;
