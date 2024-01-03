@@ -19,9 +19,12 @@ img {
   display: block;
 }
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section {
   padding: 120px 0;
@@ -333,10 +336,21 @@ img {
 /* footer */
 
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   background: #2e2f42;
   padding: 100px 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -365,4 +379,10 @@ img {
 .footer-social-title {
   margin-bottom: 20px;
   color: #fff;
+}
+
+.footer .social-list {
+  margin: auto;
+  padding: 0;
+  width: 206px;
 }
