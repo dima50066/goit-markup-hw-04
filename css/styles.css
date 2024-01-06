@@ -121,7 +121,7 @@ img {
 }
 
 /* main */
-.section-main {
+.main {
   max-width: 1440px;
   background: #2e2f42;
   padding: 188px 0;
@@ -138,7 +138,7 @@ img {
   text-align: center;
 }
 
-.section-main-title {
+.main-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -149,7 +149,7 @@ img {
   display: block;
 }
 
-.section-main-button {
+.main-button {
   cursor: pointer;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -165,11 +165,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-main-button:hover {
-  background-color: #404bbf;
-}
-
-.section-main-button:focus {
+.main-button:hover,
+.main-button:focus {
   background-color: #404bbf;
 }
 
@@ -209,30 +206,10 @@ img {
   margin-bottom: 8px;
 }
 /* TEAM */
-.section-team {
+.team {
   background: #f4f4fd;
 }
-
-.section-team-ul {
-  display: flex;
-  gap: 24px;
-}
-.section-team-li {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  display: flex;
-  flex-basis: calc((100% - 3 * 30px) / 4);
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-}
-
-.section-team-group {
-  padding: 32px 0;
-}
-
-.section-team-title {
+.team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -242,20 +219,38 @@ img {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.section-team-name {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-card {
+  display: flex;
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  flex-wrap: wrap;
+  flex-direction: column;
   background-color: #ffffff;
-  letter-spacing: 0.02em;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-members {
+  padding: 32px 0;
+}
+
+.members-name {
   color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
   text-align: center;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
-.section-team-position {
+.members-position {
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
@@ -270,8 +265,6 @@ img {
 }
 
 .social-card {
-  display: flex;
-  flex-basis: calc((100%-3 * 10) / 4);
   width: 40px;
   height: 40px;
 }
@@ -279,17 +272,15 @@ img {
 .social-link {
   width: 100%;
   height: 100%;
+  background-color: #4d5ae5;
   cursor: pointer;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-link:hover {
-  background-color: #404bbf;
-}
+.social-link:hover,
 .social-link:focus {
   background-color: #404bbf;
 }
@@ -300,10 +291,10 @@ img {
   fill: #f4f4fd;
 }
 /* portfolio */
-.section-portfolio {
+.portfolio {
   background-color: #fff;
 }
-.section-portfolio-title {
+.portfolio-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -314,34 +305,34 @@ img {
   margin-bottom: 72px;
 }
 
-.section-portfolio-ul {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
-.section-portfolio-ul:hover {
+.portfolio-list:hover {
   transform: translateY(0%);
 }
 
-.section-portfolio-card {
+.portfolio-project {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-portfolio-card:hover {
+.portfolio-project:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
 }
 
-.section-portfolio-card-group {
+.project-info {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
 }
 
-.section-portfolio-name {
+.project-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
@@ -349,7 +340,7 @@ img {
   color: #2e2f42;
   margin-bottom: 8px;
 }
-.section-portfolio-class {
+.project-type {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -374,13 +365,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background-color: #4d5ae5;
   color: #f4f4fd;
   padding: 40px 32px;
-  width: 100%;
+  background-color: #4d5ae5;
   height: 100%;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
   transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-info:hover {
