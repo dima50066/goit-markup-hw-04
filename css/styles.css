@@ -69,7 +69,7 @@ address {
   display: flex;
   align-items: center;
 }
-.header-menu-list {
+.header-menu-ul {
   display: flex;
   gap: 40px;
 }
@@ -89,7 +89,7 @@ address {
   color: #2e2f42;
 }
 
-.header-menu-button {
+.header-menu-list {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
@@ -100,20 +100,18 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.header-menu-button:hover {
-  color: #404bbf;
-}
-.header-menu-button:focus {
+.header-menu-list:hover,
+.header-menu-list:focus {
   color: #404bbf;
 }
 
-.header-menu-button::after {
-  content: 'підкреслення';
+.header-menu-list::after {
+  content: '';
   position: absolute;
   left: 0;
   width: 100%;
   height: 4px;
-  background: #404bbf;
+  background-color: #404bbf;
   border-radius: 2px;
   bottom: -1px;
 }
@@ -155,6 +153,7 @@ address {
   background-position: center;
   background-size: cover;
   text-align: center;
+  max-width: 1440px;
 }
 
 .hero-title {
