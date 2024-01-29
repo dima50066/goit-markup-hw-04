@@ -108,7 +108,7 @@ address {
 }
 
 .header-menu-button::after {
-  content: '';
+  content: 'підкреслення';
   position: absolute;
   left: 0;
   width: 100%;
@@ -372,9 +372,7 @@ address {
   width: 100%;
   height: auto;
 }
-.portfolio-overlay :hover {
-  opacity: 1;
-}
+
 .portfolio-overlay {
   position: relative;
   overflow: hidden;
@@ -382,11 +380,8 @@ address {
 .overlay-info {
   position: absolute;
   top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  left: 0;
   color: #f4f4fd;
-  padding: 40px 32px;
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
@@ -394,7 +389,7 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-info:hover {
+.portfolio-overlay:hover .overlay-info {
   transform: translateY(0);
 }
 
